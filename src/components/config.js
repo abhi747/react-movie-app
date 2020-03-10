@@ -1,0 +1,1 @@
+export const omdbEndpoint = "http://www.omdbapi.com/?apikey=8365711f";
