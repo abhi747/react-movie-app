@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import AppModal from "./AppModal";
-import { fetchMovieDetails } from "./api";
+import { fetchMovieDetails } from "../config/api";
 
 export class MovieSearch extends Component {
 	state = {
