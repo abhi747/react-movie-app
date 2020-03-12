@@ -9,13 +9,14 @@ export class MovieDetails extends Component {
 	}
 
 	render() {
-
 		const { movieDetails } = this.props
+
 		return (
 			<React.Fragment>
 
 				<MovieCard movieDetails={movieDetails} />
 				<div className="text-center">
+
 					<button
 						className="btn btn-primary"
 						type="button" onClick={this.setProfileMovies.bind(this, movieDetails)}

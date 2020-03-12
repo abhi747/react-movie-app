@@ -6,7 +6,7 @@ import MoviesProfile from "./MoviesProfile";
 import MovieDetails from "./MovieDetails";
 
 export default function Header(props) {
-	const { setMovieDetails, movieDetails, setProfileMovies, profileMovies, removeProfileMovies, toggle } = props;
+	const { setMovieDetails, movieDetails, setProfileMovies, profileMovies, removeProfileMovies } = props;
 
 	return (
 		<Router>
@@ -43,7 +43,7 @@ export default function Header(props) {
 					path="/"
 					render={() => (
 						<React.Fragment>
-							<MovieSearch setMovieDetails={setMovieDetails} toggle={toggle} />
+							<MovieSearch setMovieDetails={setMovieDetails} />
 							<MovieDetails movieDetails={movieDetails} setProfileMovies={setProfileMovies} />
 						</React.Fragment>
 					)}

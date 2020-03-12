@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import AppModal from "./AppModal";
 import { fetchMovieDetails } from "../config/api";
 
 export class MovieSearch extends Component {
 	state = {
 		search: "",
 		movieDetails: {},
-		modal: false
 	};
 
 	handleChange = e => {
@@ -17,9 +15,6 @@ export class MovieSearch extends Component {
 
 	handleSubmit = e => {
 		e.preventDefault();
-		this.setState({
-			search: ""
-		});
 
 		fetchMovieDetails(
 			this.state.search
@@ -28,20 +23,18 @@ export class MovieSearch extends Component {
 		})
 			.then((data) => {
 				if (data.Response === "False") {
-					this.toggleModal();
+					this.props.setMovieDetails({});
 				} else {
 					this.props.setMovieDetails(data);
 				}
 			}).catch(err => {
-				this.toggleModal();
+				this.props.setMovieDetails({});
 			});
-	};
 
-	toggleModal = () => {
-		this.setState((prevState) => ({
-			modal: !prevState.modal,
-		}));
-	}
+		this.setState({
+			search: ""
+		});
+	};
 
 	render() {
 		return (
@@ -66,11 +59,6 @@ export class MovieSearch extends Component {
 						</div>
 					</div>
 				</form>
-				<AppModal
-					isOpen={this.state.modal}
-					toggle={this.toggleModal}
-					modalMsg="Movie not found!"
-				/>
 			</React.Fragment>
 		);
 	}

@@ -3,14 +3,14 @@ import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap';
 
 export default function AppModal(props) {
 
-	const { isOpen, toggle, modalMsg } = props;
+	const { isOpen, toggleModal, modalMsg } = props;
 	return (
-		<Modal isOpen={isOpen} toggle={toggle}>
+		<Modal isOpen={isOpen} toggle={toggleModal}>
 			<ModalBody>
 				{modalMsg}
 			</ModalBody>
 			<ModalFooter>
-				<Button color="primary" onClick={toggle}>Okay</Button>
+				<Button color="primary" onClick={toggleModal}>Okay</Button>
 			</ModalFooter>
 		</Modal>
 	)

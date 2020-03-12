@@ -13,26 +13,34 @@ export class App extends Component {
 	};
 
 	setMovieDetails = movieDetails => {
-		this.setState({
-			movieDetails: movieDetails,
-			modalMsg: "Movie added to the profile!"
-		});
+		if (movieDetails.Title) {
+			this.setState({
+				movieDetails
+			});
+		} else {
+			this.setState({
+				movieDetails: {},
+				modalMsg: 'Movie not found!',
+				modal: true
+			})
+		}
 	};
 
 	setProfileMovies = movie => {
 		if (!this.checkIfDuplicateProfileMovie(movie)) {
 			const newProfileMovies = [...this.state.profileMovies, movie];
-			this.setState({
-				profileMovies: newProfileMovies
-			}, _ => {
-				this.toggleModal();
-				this.setMovieDetails({});
-			})
+
+			this.setState(prevState => ({
+				profileMovies: newProfileMovies,
+				modalMsg: `${movie.Title} movie added to the profile!`,
+				modal: !prevState.modal,
+			}))
 		} else {
-			this.setState({
-				modalMsg: "Movie already present in the profile!"
+			this.setState(prevState => ({
+				modalMsg: `${movie.Title} movie already present in the profile!`,
+				modal: !prevState.modal
 			})
-			this.toggleModal();
+			)
 		}
 	}
 
@@ -72,7 +80,7 @@ export class App extends Component {
 
 				<AppModal
 					isOpen={this.state.modal}
-					toggle={this.toggleModal}
+					toggleModal={this.toggleModal}
 					modalMsg={this.state.modalMsg}
 				/>
 
