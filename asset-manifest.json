@@ -1,25 +1,15 @@
 {
-  "files": {
-    "main.css": "/react-movie-app/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/react-movie-app/static/js/main.c24adb08.chunk.js",
-    "main.js.map": "/react-movie-app/static/js/main.c24adb08.chunk.js.map",
-    "runtime-main.js": "/react-movie-app/static/js/runtime-main.8f15e600.js",
-    "runtime-main.js.map": "/react-movie-app/static/js/runtime-main.8f15e600.js.map",
-    "static/css/2.47e06e2e.chunk.css": "/react-movie-app/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.499d88e8.chunk.js": "/react-movie-app/static/js/2.499d88e8.chunk.js",
-    "static/js/2.499d88e8.chunk.js.map": "/react-movie-app/static/js/2.499d88e8.chunk.js.map",
-    "index.html": "/react-movie-app/index.html",
-    "precache-manifest.8954836fe0e9cf6148c836036a48f703.js": "/react-movie-app/precache-manifest.8954836fe0e9cf6148c836036a48f703.js",
-    "service-worker.js": "/react-movie-app/service-worker.js",
-    "static/css/2.47e06e2e.chunk.css.map": "/react-movie-app/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.5ecd60fb.chunk.css.map": "/react-movie-app/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.499d88e8.chunk.js.LICENSE.txt": "/react-movie-app/static/js/2.499d88e8.chunk.js.LICENSE.txt"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.8f15e600.js",
-    "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.499d88e8.chunk.js",
-    "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.c24adb08.chunk.js"
-  ]
+  "main.css": "/react-movie-app/static/css/main.ce38b284.chunk.css",
+  "main.js": "/react-movie-app/static/js/main.fff64142.chunk.js",
+  "main.js.map": "/react-movie-app/static/js/main.fff64142.chunk.js.map",
+  "runtime~main.js": "/react-movie-app/static/js/runtime~main.4dfe89d3.js",
+  "runtime~main.js.map": "/react-movie-app/static/js/runtime~main.4dfe89d3.js.map",
+  "static/css/2.1a69ec0b.chunk.css": "/react-movie-app/static/css/2.1a69ec0b.chunk.css",
+  "static/js/2.a97ce77f.chunk.js": "/react-movie-app/static/js/2.a97ce77f.chunk.js",
+  "static/js/2.a97ce77f.chunk.js.map": "/react-movie-app/static/js/2.a97ce77f.chunk.js.map",
+  "index.html": "/react-movie-app/index.html",
+  "precache-manifest.12fa40e649b580338f6629de5c8333d6.js": "/react-movie-app/precache-manifest.12fa40e649b580338f6629de5c8333d6.js",
+  "service-worker.js": "/react-movie-app/service-worker.js",
+  "static/css/2.1a69ec0b.chunk.css.map": "/react-movie-app/static/css/2.1a69ec0b.chunk.css.map",
+  "static/css/main.ce38b284.chunk.css.map": "/react-movie-app/static/css/main.ce38b284.chunk.css.map"
 }
