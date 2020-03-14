@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/react-movie-app/static/js/2.a97ce77f.chunk.js"
   },
   {
-    "revision": "7755b49a72efba372223191421272cfc",
+    "revision": "b06a0e4b45daa3d3fb0798717dcd1642",
     "url": "/react-movie-app/index.html"
   }
 ];
