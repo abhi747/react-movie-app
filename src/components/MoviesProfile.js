@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import MovieCard from "./MovieCard";
 
-export class profileMoviesProfile extends Component {
+export class profileMovies extends Component {
 
 	render() {
 		const { profileMovies, removeProfileMovies } = this.props;
@@ -26,4 +26,4 @@ export class profileMoviesProfile extends Component {
 	}
 }
 
-export default profileMoviesProfile
+export default profileMovies
