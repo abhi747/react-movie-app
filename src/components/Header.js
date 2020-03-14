@@ -9,7 +9,7 @@ export default function Header(props) {
 	const { setMovieDetails, movieDetails, setProfileMovies, profileMovies, removeProfileMovies } = props;
 
 	return (
-		<Router>
+		<Router basename={process.env.PUBLIC_URL}>
 			<nav className="navbar navbar-expand navbar-dark bg-dark">
 				<Link className="navbar-brand" to="/">
 					Movie DB
