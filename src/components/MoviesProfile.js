@@ -8,7 +8,7 @@ export class profileMoviesProfile extends Component {
 
 		if (!profileMovies.length)
 			return (
-				<h4 className="mt-5 text-center">No profileMovies in the profile yet!</h4>
+				<h4 className="mt-5 text-center">No movies in your library yet!</h4>
 			)
 		const profilesMovieList = profileMovies.map(movie => {
 			return (

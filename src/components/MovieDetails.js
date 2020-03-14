@@ -21,7 +21,7 @@ export class MovieDetails extends Component {
 						className="btn btn-primary"
 						type="button" onClick={this.setProfileMovies.bind(this, movieDetails)}
 						disabled={!movieDetails.Title}
-					>Add to profile</button>
+					>Add to library</button>
 				</div>
 
 			</React.Fragment>

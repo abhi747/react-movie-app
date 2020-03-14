@@ -30,7 +30,7 @@ export default function Header(props) {
 					<ul className="navbar-nav mr-auto">
 						<li className="nav-item">
 							<Link className="nav-link" to="profile">
-								My Profile
+								My Library
                 </Link>
 						</li>
 					</ul>

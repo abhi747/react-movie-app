@@ -32,12 +32,12 @@ export class App extends Component {
 
 			this.setState(prevState => ({
 				profileMovies: newProfileMovies,
-				modalMsg: `${movie.Title} movie added to the profile!`,
+				modalMsg: `${movie.Title} movie added to your library!`,
 				modal: !prevState.modal,
 			}))
 		} else {
 			this.setState(prevState => ({
-				modalMsg: `${movie.Title} movie already present in the profile!`,
+				modalMsg: `${movie.Title} movie already present in your library!`,
 				modal: !prevState.modal
 			})
 			)
